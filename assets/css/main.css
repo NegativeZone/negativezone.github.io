@@ -7,10 +7,10 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --ink: #d9d5cf;
-    --muted: #8f8a82;
-    --faint: #38352f;
-    --bg: #16150f;
+    --ink: #d9d6d2;
+    --muted: #8e8a85;
+    --faint: #373533;
+    --bg: #161513;
     --accent: #d98a5f;
   }
 }
@@ -54,6 +54,9 @@ a:hover { text-decoration-thickness: 2px; }
 .post-list h2 a { color: var(--ink); text-decoration: none; }
 .post-list h2 a:hover { color: var(--accent); }
 .post-desc { margin: 0; color: var(--muted); font-size: 1rem; }
+
+.back-link { display: inline-block; margin-bottom: 1.5rem; color: var(--muted); text-decoration: none; font-size: 0.9rem; }
+.back-link:hover { color: var(--accent); }
 
 .post-header { margin-bottom: 2rem; }
 .post-header h1 { font-size: 1.8rem; line-height: 1.25; margin: 0 0 0.35rem; }
