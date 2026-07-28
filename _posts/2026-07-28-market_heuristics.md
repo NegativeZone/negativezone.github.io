@@ -21,7 +21,7 @@ The build refuses to emit output unless its invariants hold: exactly the right m
 
 Then the measurement. Run the same frozen slate of strategies, same engine, twice: once on as-of-date membership, once on recent membership applied retroactively. The difference, per strategy, is the survivorship bias. Sanity check: buy-and-hold on the rebuilt universe lands within dividend noise of the investable index.
 
-The finding I can share abstractly: the bias is not a constant you can subtract. It varies several-fold across strategy families, and it's worst for exactly the families that concentrate in names heading for trouble. If your universe is survivor-only, some strategies are lying to you much harder than others.
+What I can say without giving anything away: the bias is not a constant you can subtract. It varies several-fold across strategy families, and it's worst for exactly the families that concentrate in names heading for trouble. If your universe is survivor-only, some strategies are lying to you much harder than others.
 
 There's a second universe with no index committee at all: the exchange's own daily settlement files, which list delisted names because they traded that day. Membership is trailing liquidity rank. Survivorship-free by construction. Six companies a free data vendor had simply erased were recovered from that archive, verified at 0.997+ return correlation on overlaps. One gap remains (dividends on those six) and the docs declare it instead of burying it.
 
@@ -39,7 +39,7 @@ And one QC window got widened after a real miss: a mis-dated split sat inside th
 
 ## Seal the evaluation before you see the results
 
-Here's the uncomfortable part. Once the data is clean, the biggest remaining threat is the researcher. Given the chance, I will re-run things until they look good and remember it as diligence.
+Here's the uncomfortable part. Once the data is clean, the biggest remaining threat is me. Given half a chance I'll re-run things until they look good and remember it as diligence.
 
 So the chance gets removed structurally.
 
@@ -49,7 +49,7 @@ What the strategy has to beat is also fixed in advance: a 100-seed Monte Carlo o
 
 The app enforces this where willpower would fail. No strategy selector, no settings panel: a live switch between alternatives is the forking-paths machine, so it doesn't exist. No monthly scoreboard for the experimental sleeve either; performance surfaces at the sealed checkpoints and not before. Deposits mid-cycle are sizing events against frozen picks, never re-ranking events. Separate code paths.
 
-The pre-registration also keeps an honest ledger of its own evidence. Each component is labeled by validation status, including one adopted at face value as an in-sample discovery, winner's curse named as such. It records where the pipeline's recommendation and my decision differed. Writing down your disagreement with your own tooling is uncomfortable. It's also the cheapest audit trail I know.
+The pre-registration also keeps a ledger of its own evidence. Each component is labeled by validation status, including one adopted at face value as an in-sample discovery, winner's curse named as such. It records where the pipeline's recommendation and my decision differed. Writing down your disagreement with your own tooling is uncomfortable. It's also the cheapest audit trail I know.
 
 ## The app at the end
 
@@ -57,7 +57,7 @@ A local FastAPI-and-SQLite app produces a monthly briefing. It never trades; I e
 
 The app imports the same selection library the backtests use, held together by a parity test: identical eligibility, scores, and picks at historical decision dates, exit non-zero on any mismatch.
 
-For calibration: ~4,300 daily exchange files parsed into a 6.7-million-row table, 2009 to now, eight research generations, each one built because the previous one failed at something specific. No CI, no packaging. It's a single-operator system, and the rigor budget went to the data and the protocol.
+The numbers: ~4,300 daily exchange files parsed into a 6.7-million-row table, 2009 to now, eight research generations, each one built because the previous one failed at something specific. No CI, no packaging. It's a single-operator system, and the rigor budget went to the data and the protocol.
 
 The strategy it runs is live. And no, this post doesn't say what it is.
 
