@@ -2,4 +2,4 @@
 layout: home
 ---
 
-I build AI systems that have to work in production: fraud ML at banks, agentic systems, full-stack products. These are write-ups of things I've actually built. When someone has something of value, they show you the thing.
+I build AI systems for production: the kind that work, not the kind that only cost money. This blog is the residue — development stream-of-consciousness cleaned up into posts, a grievance I couldn't let go, and the occasional "hey, check this out."
